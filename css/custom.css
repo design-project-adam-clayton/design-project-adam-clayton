@@ -8,3 +8,17 @@
     --bs-light-gray: #f0f0f0;
     --bs-gray: #e6e6e6;
 }
+body {
+    background-color: var(--bs-gray);
+}
+h1, h2, h3 {
+    font-family: 'Anton', sans-serif;
+}
+.abel-font {
+    font-family: 'Abel', sans-serif;
+}
+#logo {
+    width: 30px;
+    height: 30px;
+}
+
