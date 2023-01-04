@@ -27,12 +27,19 @@ h1, h2, h3 {
 }
 
 .border-round {
-    width: 150px;
-    height: 150px;
+    min-width: 125px;
+    max-width: 125px;
+    height: 125px;
     border-radius: 50%;
-    border: white 15px solid;
+    border: white 10px solid;
     text-transform: uppercase;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
 }
 
 .bg-red {
@@ -49,4 +56,22 @@ h1, h2, h3 {
 
 .bg-aqua {
     background-color: var(--bs-aqua);
+}
+
+.mw-icons {
+    max-width: 695px;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 768px) {
+    .mw-icons {
+        max-width: 290px;
+    }
 }
