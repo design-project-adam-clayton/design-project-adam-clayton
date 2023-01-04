@@ -8,17 +8,45 @@
     --bs-light-gray: #f0f0f0;
     --bs-gray: #e6e6e6;
 }
+
 body {
     background-color: var(--bs-gray);
 }
+
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
 }
+
 .abel-font {
     font-family: 'Abel', sans-serif;
 }
+
 #logo {
     width: 30px;
     height: 30px;
 }
 
+.border-round {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: white 15px solid;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bg-red {
+    background-color: var(--bs-red);
+}
+
+.bg-orange {
+    background-color: var(--bs-orange);
+}
+
+.bg-green {
+    background-color: var(--bs-green);
+}
+
+.bg-aqua {
+    background-color: var(--bs-aqua);
+}
