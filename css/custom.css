@@ -103,8 +103,6 @@ h1, h2, h3 {
 }
 
 .card-expand {
-    /*width: 330px;*/
-    /*height: 223px;*/
     width: var(--bs-card-width-sm);
     padding: 0;
     margin: .5rem;
@@ -117,9 +115,8 @@ h1 {
 h2 {
     font-size: xx-large;
 }
+
 #main-aside-content {
-    /*min-width: 500px;*/
-    /*max-width: 500px;*/
     width: 40%;
 }
 
@@ -127,6 +124,7 @@ h2 {
     .mw-icons {
         max-width: 275px;
     }
+
     .border-round {
         min-width: var(--bs-badge-small);
         max-width: var(--bs-badge-small);
@@ -138,26 +136,18 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .card-img {
-        width: var(--bs-card-width-md);
-        height: var(--bs-card-height-md);
-    }
     .card-expand {
-        width: var(--bs-card-width-md);
+        width: 45%;
+
     }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+
     #card-main-content {
         max-width: 935px;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .card-expand {
-        width: 45%;
-
-    }
-    .card-img {
-        width: 100%;
-        /*height: calc(.7*);*/
-        height: var(--bs-card-height-sm);
-    }
-}
