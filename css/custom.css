@@ -7,6 +7,8 @@
     --bs-aqua: #00aba9;
     --bs-light-gray: #f0f0f0;
     --bs-gray: #e6e6e6;
+    --bs-badge-small: 85px;
+    --bs-badge-medium: 125px;
 }
 
 body {
@@ -21,15 +23,19 @@ h1, h2, h3 {
     font-family: 'Abel', sans-serif;
 }
 
+.anton-font {
+    font-family: 'Anton', sans-serif;
+}
+
 #logo {
     width: 30px;
     height: 30px;
 }
 
 .border-round {
-    min-width: 125px;
-    max-width: 125px;
-    height: 125px;
+    min-width: var(--bs-badge-medium);
+    max-width: var(--bs-badge-medium);
+    height: var(--bs-badge-medium);
     border-radius: 50%;
     border: white 10px solid;
     text-transform: uppercase;
@@ -58,8 +64,42 @@ h1, h2, h3 {
     background-color: var(--bs-aqua);
 }
 
+.img-border-gray {
+    border-color: lightgray !important;
+
+}
+
+.card-img {
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 250px;
+}
+
+.bg-img-apple {
+    background-image: url("../img/apple-ipad.jpg");
+}
+
+.bg-img-man {
+    background-image: url("../img/man.jpg");
+}
+
+.bg-img-mac {
+    background-image: url("../img/macbook.jpg");
+}
+
+.bg-img-security {
+    background-image: url("../img/security.jpg");
+}
+
 .mw-icons {
     max-width: 695px;
+}
+
+.card-expand {
+    /*width: 330px;*/
+    /*height: 223px;*/
 }
 
 h1 {
@@ -72,6 +112,22 @@ h2 {
 
 @media screen and (max-width: 768px) {
     .mw-icons {
-        max-width: 290px;
+        max-width: 275px;
+    }
+    .border-round {
+        min-width: var(--bs-badge-small);
+        max-width: var(--bs-badge-small);
+        height: var(--bs-badge-small);
+        border-width: 7px;
+        font-size: small;
+        font-weight: normal;
+    }
+    .card-img {
+
+    }
+    .card-expand {
+        /*width: 80%;*/
+        /*height: 80%;*/
     }
 }
+
