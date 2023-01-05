@@ -9,10 +9,13 @@
     --bs-gray: #e6e6e6;
     --bs-badge-small: 85px;
     --bs-badge-medium: 125px;
+    --bs-card-width-lg: 370px;
+    --bs-card-height-lg: 250px;
 }
 
 body {
     background-color: var(--bs-gray);
+    min-width: 460px;
 }
 
 h1, h2, h3 {
@@ -70,11 +73,11 @@ h1, h2, h3 {
 }
 
 .card-img {
-    background-size: cover;
+    background-size: contain;
     align-items: center;
     justify-content: center;
-    width: 370px;
-    height: 250px;
+    width: var(--bs-card-width-lg);
+    height: var(--bs-card-height-lg);
 }
 
 .bg-img-apple {
@@ -100,6 +103,9 @@ h1, h2, h3 {
 .card-expand {
     /*width: 330px;*/
     /*height: 223px;*/
+    width: var(--bs-card-width-lg);
+    padding: 0;
+    margin: .5rem;
 }
 
 h1 {
