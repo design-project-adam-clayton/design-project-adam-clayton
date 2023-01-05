@@ -9,8 +9,10 @@
     --bs-gray: #e6e6e6;
     --bs-badge-small: 85px;
     --bs-badge-medium: 125px;
-    --bs-card-width-lg: 370px;
-    --bs-card-height-lg: 250px;
+    --bs-card-width-sm: 370px;
+    --bs-card-height-sm: 250px;
+    --bs-card-width-md: 300px;
+    --bs-card-height-md: 202px;
 }
 
 body {
@@ -76,8 +78,8 @@ h1, h2, h3 {
     background-size: contain;
     align-items: center;
     justify-content: center;
-    width: var(--bs-card-width-lg);
-    height: var(--bs-card-height-lg);
+    width: var(--bs-card-width-sm);
+    height: var(--bs-card-height-sm);
 }
 
 .bg-img-apple {
@@ -103,7 +105,7 @@ h1, h2, h3 {
 .card-expand {
     /*width: 330px;*/
     /*height: 223px;*/
-    width: var(--bs-card-width-lg);
+    width: var(--bs-card-width-sm);
     padding: 0;
     margin: .5rem;
 }
@@ -114,6 +116,11 @@ h1 {
 
 h2 {
     font-size: xx-large;
+}
+#main-aside-content {
+    /*min-width: 500px;*/
+    /*max-width: 500px;*/
+    width: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,12 +135,29 @@ h2 {
         font-size: small;
         font-weight: normal;
     }
-    .card-img {
+}
 
+@media screen and (min-width: 768px) {
+    .card-img {
+        width: var(--bs-card-width-md);
+        height: var(--bs-card-height-md);
     }
     .card-expand {
-        /*width: 80%;*/
-        /*height: 80%;*/
+        width: var(--bs-card-width-md);
+    }
+    #card-main-content {
+        max-width: 935px;
     }
 }
 
+@media screen and (min-width: 992px) {
+    .card-expand {
+        width: 45%;
+
+    }
+    .card-img {
+        width: 100%;
+        /*height: calc(.7*);*/
+        height: var(--bs-card-height-sm);
+    }
+}
