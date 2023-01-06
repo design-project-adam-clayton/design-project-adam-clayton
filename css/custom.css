@@ -24,7 +24,7 @@ html, body {
     min-width: 460px;
 }
 
-.anton-font, h1, h2, h3 {
+.anton-font {
     font-family: 'Anton', sans-serif;
 }
 
@@ -40,12 +40,12 @@ h2 {
     font-family: 'Abel', sans-serif;
 }
 
-#wh-logo {
+#logo-wh {
     width: 30px;
     height: 30px;
 }
 
-.border-round {
+.bordered-pill-badge {
     min-width: var(--bs-badge-medium);
     max-width: var(--bs-badge-medium);
     height: var(--bs-badge-medium);
@@ -60,65 +60,61 @@ h2 {
     font-weight: bold;
 }
 
-.bg-fill:nth-of-type(1) {
+.badge-fill:nth-of-type(1) {
     background-color: var(--bs-red);
 }
 
-.bg-fill:nth-of-type(2) {
+.badge-fill:nth-of-type(2) {
     background-color: var(--bs-orange);
 }
 
-.bg-fill:nth-of-type(3) {
+.badge-fill:nth-of-type(3) {
     background-color: var(--bs-green);
 }
 
-.bg-fill:nth-of-type(4) {
+.badge-fill:nth-of-type(4) {
     background-color: var(--bs-aqua);
 }
 
-.img-border-gray {
+.gray-border {
     border-color: lightgray !important;
 }
 
-.card-img {
-    background-size: contain;
-    align-items: center;
-    justify-content: center;
+.card-img-wh {
     width: var(--bs-card-width-sm);
     height: var(--bs-card-height-sm);
 }
 
-.mw-pill-badge-container {
+.mw-695 {
     max-width: 695px;
 }
 
-.card-expand {
+.card-body-mw {
     width: var(--bs-card-width-sm);
     padding: 0;
     margin: .5rem;
 }
 
-
-#main-aside-content {
+#main-aside {
     width: 40%;
 }
 
-.last-thumb {
+.thumbnail-wh {
     width: 55px;
     height: 55px;
     display: inline-block;
 }
 
-.tweet {
+.font-small {
     font-size: small;
 }
 
 @media screen and (max-width: 768px) {
-    .mw-pill-badge-container {
+    .mw-695 {
         max-width: 275px;
     }
 
-    .border-round {
+    .bordered-pill-badge {
         min-width: var(--bs-badge-small);
         max-width: var(--bs-badge-small);
         height: var(--bs-badge-small);
@@ -129,16 +125,16 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .card-expand {
+    .card-body-mw {
         width: 45%;
     }
 
-    .card-img {
+    .card-img-wh {
         width: 100%;
         height: auto;
     }
 
-    #card-main-content {
+    #main-content {
         max-width: 935px;
     }
 }
