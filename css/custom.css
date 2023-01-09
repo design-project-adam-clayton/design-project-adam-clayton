@@ -60,6 +60,30 @@ h2 {
     font-weight: bold;
 }
 
+.bordered-pill-badge:hover {
+    position: relative;
+    animation-name: slide-up;
+    animation-duration: .5s;
+    top:-20px;
+}
+
+.bordered-pill-badge:not(:hover) {
+    position: relative;
+    animation-name: slide-down;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide-up {
+    0%   {top:0;}
+    100% {top:-20px;}
+}
+
+@keyframes slide-down {
+    0% {top:-20px;}
+    100%   {top:0;}
+}
+
 .badge-fill:nth-of-type(1) {
     background-color: var(--bs-red);
 }
